@@ -83,6 +83,7 @@ nav .inner-nav .menu i {
 nav .inner-nav .menu h3 {
   font-size: 20px;
   font-weight: 300;
+  cursor: pointer;
 }
 nav .inner-nav .phoneMenu {
   display: none;
@@ -134,6 +135,7 @@ nav .inner-nav .phoneMenu {
   .inner-nav .phoneMenu .phone-menu h3 {
     font-weight: 300;
     font-size: 15px;
+    cursor: pointer;
   }
   .inner-nav .phoneMenu .icon {
     width: 20%;
