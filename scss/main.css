@@ -146,6 +146,7 @@ nav .inner-nav .phoneMenu {
   }
   .inner-nav .phoneMenu .icon i {
     font-size: 25px;
+    cursor: pointer;
   }
 }
 .banner {
