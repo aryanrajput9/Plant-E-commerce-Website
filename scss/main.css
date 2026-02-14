@@ -243,18 +243,20 @@ nav .inner-nav .phoneMenu {
     padding: 0px 40px !important;
   }
   .innerBanner .upperdiv {
-    display: flex;
+    display: flex !important;
     flex-direction: row !important;
     gap: 20px;
   }
   .upper-lowerdiv {
-    background-color: #0a3522;
-    display: flex;
-    justify-content: center;
+    background-color: #0a3522 !important;
+    display: flex !important;
+    justify-content: center !important;
     padding: 0px 40px !important;
   }
   .upper-lowerdiv .lowerdiv {
+    width: 100%;
     display: flex;
+    overflow-y: visible !important;
     justify-content: space-between;
     align-items: center;
   }

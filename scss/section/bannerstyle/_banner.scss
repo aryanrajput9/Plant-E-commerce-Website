@@ -120,7 +120,7 @@
     padding: 0px 40px !important;
 
     .upperdiv {
-      display: flex;
+      display: flex !important;
       flex-direction: row !important;
       gap: 20px;
     }
@@ -128,13 +128,15 @@
 
 
   .upper-lowerdiv {
-    background-color: #0a3522;
-    display: flex;
-    justify-content: center;
+    background-color: #0a3522 !important;
+    display: flex !important;
+    justify-content: center !important;
     padding: 0px 40px !important;
 
     .lowerdiv {
+      width: 100%;
       display: flex;
+      overflow-y: visible !important;
       justify-content: space-between;
       align-items: center;
 
