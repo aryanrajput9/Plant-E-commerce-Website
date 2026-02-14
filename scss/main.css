@@ -205,24 +205,24 @@ nav .inner-nav .phoneMenu {
   padding: 0px 20px;
 }
 .banner .upper-lowerdiv .lowerdiv {
-  width: 100%;
   max-width: 1300px;
   height: auto;
   display: flex;
   flex-wrap: nowrap;
   padding: 0px 20px;
   overflow-y: auto;
+  gap: 40px;
 }
 .banner .upper-lowerdiv .lowerdiv .lowerdiv_box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 20px 20px;
+  align-items: start;
+  padding: 20px 0px;
   flex-shrink: 0;
 }
 .banner .upper-lowerdiv .lowerdiv .lowerdiv_box i {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
 }
 .banner .upper-lowerdiv .lowerdiv .lowerdiv_box .box-text {
@@ -231,7 +231,7 @@ nav .inner-nav .phoneMenu {
   align-items: center;
 }
 .banner .upper-lowerdiv .lowerdiv .lowerdiv_box .box-text h3 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
 }
 .banner .upper-lowerdiv .lowerdiv .lowerdiv_box .box-text p {
