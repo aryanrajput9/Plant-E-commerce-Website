@@ -8,7 +8,7 @@ nav {
 
     .inner-nav {
         width: 100%;
-        max-width: 1500px;
+        max-width: 1300px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -23,8 +23,19 @@ nav {
             align-items: center;
             padding: 0px 20px;
 
-            img {
+
+            .logo {
                 width: 200px;
+                display: flex;
+                justify-content: start;
+                align-items: start;
+
+            }
+
+            .logo img {
+                width: 200px;
+                height: fit-content;
+                object-fit: cover;
             }
 
             .menuControl {
@@ -76,6 +87,12 @@ nav {
 
 }
 
+@media (min-width:768px) {
+    .mobileMenu {
+        padding: 10px 40px !important;
+    }
+}
+
 @media (min-width: 1024px) {
 
     nav {
@@ -94,47 +111,54 @@ nav {
     .inner-nav {
         width: 100%;
         justify-content: center !important;
-        overflow-x: visible !important;
-    }
-
-    .phoneMenu {
-        display: flex !important;
-        color: white;
-        justify-content: space-between;
         align-items: center;
-        padding: 0px 20px;
+        overflow-x: visible !important;
 
-        .phone-logo {
-            width: 20%;
 
-            img {
-                width: 100%;
-            }
-        }
-
-        .phone-menu {
+        .phoneMenu {
+            width: 100%;
             display: flex !important;
             justify-content: space-between;
-            width: 40%;
-
-            h3 {
-                font-weight: 300;
-                font-size: 15px;
-            }
-        }
-
-        .icon {
-            width: 20%;
-            display: flex;
-            justify-content: end;
             align-items: center;
-            gap: 20px;
+            padding: 0px 20px;
+            color: white;
+            margin-top: 20px;
 
-            i {
-                font-size: 25px;
+
+            .phone-logo {
+                width: 20%;
+                padding: 20px;
+
+                img {
+                    width: 100%;
+                }
             }
 
+            .phone-menu {
+                display: flex !important;
+                justify-content: space-between;
+                width: 40%;
+
+                h3 {
+                    font-weight: 300;
+                    font-size: 15px;
+                }
+            }
+
+            .icon {
+                width: 20%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                gap: 20px;
+
+                i {
+                    font-size: 25px;
+                }
+
+            }
         }
     }
+
 
 }

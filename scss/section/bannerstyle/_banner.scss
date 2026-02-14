@@ -1,11 +1,15 @@
 .banner {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(to right, #0c4b25, #2e7f49, #0c4b25);
 
   .innerBanner {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1300px;
     height: auto;
     padding: 0px 20px;
 
@@ -22,7 +26,6 @@
       .left-side {
         width: 100%;
         color: white;
-        height: 30%;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -41,8 +44,7 @@
       }
 
       .right-side {
-        width: 100%;
-        height: 100%;
+        width: 80%;
         background-color: white;
         border-radius: 50% 50% 0% 0%;
 
@@ -50,7 +52,7 @@
 
       img {
         width: 100%;
-        height: 100%;
+        height: auto;
       }
     }
 
@@ -58,39 +60,164 @@
 
   }
 
-  .lowerdiv {
+  .upper-lowerdiv {
+    width: 100%;
     background-color: #0a3522;
-    height: auto;
     display: flex;
-    flex-wrap: nowrap;
-    overflow-y: auto;
+    justify-content: center;
+    padding: 0px 20px;
 
-
-    .lowerdiv_box {
+    .lowerdiv {
+      width: 100%;
+      max-width: 1300px;
+      height: auto;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px 20px;
-      flex-shrink: 0;
+      flex-wrap: nowrap;
+      padding: 0px 20px;
+      overflow-y: auto;
 
-      i {
-        font-size: 50px;
-        color: white;
-      }
 
-      .box-text {
-        color: white;
+
+      .lowerdiv_box {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        padding: 20px 20px;
+        flex-shrink: 0;
 
-        h3 {
-          font-size: 25px;
-          font-weight: 500;
+        i {
+          font-size: 50px;
+          color: white;
         }
 
+        .box-text {
+          color: white;
+          display: flex;
+          align-items: center;
+
+          h3 {
+            font-size: 25px;
+            font-weight: 500;
+          }
+
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+
+
+@media (min-width:768px) {
+
+  .innerBanner {
+    padding: 0px 40px !important;
+
+    .upperdiv {
+      display: flex;
+      flex-direction: row !important;
+      gap: 20px;
+    }
+  }
+
+
+  .upper-lowerdiv {
+    background-color: #0a3522;
+    display: flex;
+    justify-content: center;
+    padding: 0px 40px !important;
+
+    .lowerdiv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      .lowerdiv_box {
+        justify-content: start !important;
+        align-items: center !important;
+        flex-direction: row !important;
+        gap: 15px;
+        padding: 20px 0px !important;
+      }
+
+      .lowerdiv_box .box-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: start !important;
+        align-items: start !important;
+        gap: 5px;
+
         p {
-          display: none;
+          display: block !important;
+          width: 80%;
+          font-size: 14px;
+        }
+      }
+
+      .lowerdiv_box i {
+        font-size: 35px !important;
+        padding-left: 5px;
+      }
+
+      .lowerdiv_box h3 {
+        font-size: 18px !important;
+      }
+
+    }
+  }
+
+
+
+
+}
+
+@media (min-width:1024px) {
+
+  .innerBanner {
+    width: 100%;
+  }
+
+  .upperdiv {
+    .left-side {
+      h2 {
+        font-size: 5rem !important;
+      }
+    }
+  }
+
+  .upper-lowerdiv {
+    padding: 0px 60px !important;
+
+    .lowerdiv {
+      padding: 0px 30px !important;
+
+      .lowerdiv_box {
+        width: 32%;
+        gap: 20px !important;
+
+        i {
+          font-size: 100px !important;
+
+        }
+
+        .box-text {
+          h3 {
+            font-size: 25px !important;
+            font-weight: 500 !important;
+          }
+
+          p {
+            font-size: 18px !important;
+            width: 100%;
+            opacity: 0.8;
+          }
         }
       }
     }
