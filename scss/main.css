@@ -402,7 +402,7 @@ nav .inner-nav .phoneMenu {
 .veraity .veraity-inner .first-verity {
   width: 100%;
   background-color: #dddddc;
-  height: 40%;
+  height: 50%;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -455,7 +455,7 @@ nav .inner-nav .phoneMenu {
 .veraity .secocnd-verity {
   width: 100%;
   background-color: #dddddc;
-  height: 40%;
+  height: 50%;
   display: flex;
   justify-content: center;
   flex-direction: row;
