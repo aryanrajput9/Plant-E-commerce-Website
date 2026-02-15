@@ -1,6 +1,6 @@
 import { slideBar } from "./mobileNav.js";
 import { productTab } from "./producttab.js";
-import { getData } from "../api/Api.js";
+import { getData } from "./api/Api.js";
 
 
 slideBar();
