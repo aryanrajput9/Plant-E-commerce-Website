@@ -1,0 +1,197 @@
+.our-product {
+    width: 100%;
+    height: 70%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .inner-product {
+        width: 100%;
+        height: 100%;
+        max-width: 1300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 0px 20px;
+
+        .inner-product-title {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            h2 {
+                font-size: 40px;
+                color: #0b3423;
+                border-bottom: 2px solid #0b3423;
+                padding: 10px 0px;
+            }
+
+            .product-tab {
+                display: flex;
+                gap: 10px;
+
+                button {
+                    font-size: 11px;
+                    padding: 3px 6px;
+                    background: transparent;
+                    border-radius: 30px;
+                    border: 2px solid #0b3423;
+                }
+            }
+        }
+
+        .product-details {
+            width: 100%;
+            height: 60%;
+            display: flex;
+            flex-direction: row;
+            overflow-y: scroll;
+            gap: 30px;
+
+            .plant-card {
+                display: flex;
+                height: 100%;
+                width: 100%;
+                overflow-y: auto;
+                gap: 30px;
+            }
+
+            .productBox {
+                width: 80%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                gap: 15px;
+
+
+
+                .productImg {
+                    background: #dddcd9;
+                    width: 100%;
+                    height: 80%;
+                    border-radius: 30px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .productPrice {
+                    width: 100%;
+                    padding-left: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h4 {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    h5 {
+                        font-size: 16px;
+                        color: #cd9f7a;
+                    }
+                }
+            }
+        }
+
+        #bestseller {
+            display: none;
+
+        }
+
+        #customerfavorities {
+            display: none;
+
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .our-product .inner-product .inner-product-title .product-tab button {
+        width: fit-content;
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .productBox {
+        width: 60% !important;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        gap: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .our-product {
+        margin-top: 0px;
+        height: 100%;
+    }
+
+    .our-product .inner-product {
+        gap: 50px;
+    }
+
+    .our-product .inner-product .product-details {
+
+        height: 50%;
+        overflow-y: visible;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inner-product {
+        padding: 0px 40px !important;
+    }
+
+    .productBox {
+        width: 30% !important;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        gap: 15px;
+    }
+}
+
+@media (min-width:1024px) {
+    .our-product .inner-product .inner-product-title {
+        gap: 30px;
+    }
+
+    .our-product .inner-product .inner-product-title h2 {
+        font-size: 55px;
+    }
+
+    .our-product .inner-product .inner-product-title .product-tab button {
+        width: fit-content;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        padding: 15px 30px;
+    }
+
+    .our-product .inner-product .product-details .productBox .productPrice h4 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .our-product .inner-product .product-details .productBox .productPrice h5 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
