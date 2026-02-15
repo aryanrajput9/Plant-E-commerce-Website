@@ -5,13 +5,12 @@ import { getData } from "../data/Api.js";
 
 slideBar();
 
+const plants = await getData();
 
-async function init() {
-
-    const plants = await getData();
-
-    productTab(plants);
-
+if (!plants || plants.length === 0) {
+    console.log("No plants received");
+    return;
 }
 
-init()
+productTab(plants);
+
