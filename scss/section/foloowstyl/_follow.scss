@@ -1,0 +1,43 @@
+.follow {
+    width: 100%;
+    margin-top: 70px;
+    background-color: #dddddb;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.innr-follow {
+    width: 100%;
+    max-width: 1300px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.follow-title {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        color: #345646;
+    }
+}
+
+.follower-box {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    overflow-y: auto;
+    gap: 20px;
+
+}
+
+.follower-box img {
+    width: 300px;
+    border-radius: 20px;
+}

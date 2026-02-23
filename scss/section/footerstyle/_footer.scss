@@ -1,0 +1,136 @@
+.footer {
+    background: #0e3324;
+    color: white;
+    padding: 50px 20px;
+
+    .footer-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .newsletter {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h3 {
+            font-size: 18px;
+        }
+
+        .subscribe {
+            display: flex;
+            justify-content: center;
+
+            input {
+                padding: 10px;
+                width: 200px;
+                border: none;
+            }
+
+            button {
+                padding: 10px;
+                background: orange;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+
+
+
+        .address,
+        .center,
+        .pages {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        .center p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+
+            i {
+                background: white;
+                color: #0e3324;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .copy {
+        text-align: center;
+        font-size: 12px;
+        color: #aaa;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width:768px) {
+
+    .footer {
+
+        .newsletter h3 {
+            font-size: 22px;
+        }
+
+        .footer-content {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            padding: 20px 0px;
+
+            .address {
+                width: 20%;
+            }
+
+            .center {
+                width: 50%;
+                border-right: 1px solid white;
+                border-left: 1px solid white;
+            }
+
+            .pages {
+                width: 20%;
+
+                p {
+                    font-size: 13px;
+                }
+            }
+
+            .social {
+                justify-content: center;
+            }
+
+            .center {
+                text-align: center;
+            }
+        }
+    }
+}
