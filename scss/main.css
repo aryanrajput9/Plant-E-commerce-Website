@@ -734,10 +734,12 @@ nav .inner-nav .phoneMenu {
 @media (min-width: 768px) {
   .our-product {
     margin-top: 0px;
-    height: 100%;
+    height: 70%;
   }
   .our-product .inner-product {
     gap: 50px;
+    height: 70%;
+    justify-content: start;
   }
   .our-product .inner-product .product-details {
     height: 50%;
@@ -758,6 +760,9 @@ nav .inner-nav .phoneMenu {
   }
 }
 @media (min-width: 1024px) {
+  .our-product {
+    height: 100%;
+  }
   .our-product .inner-product .inner-product-title {
     gap: 30px;
   }
@@ -778,5 +783,213 @@ nav .inner-nav .phoneMenu {
   .our-product .inner-product .product-details .productBox .productPrice h5 {
     font-size: 20px;
     font-weight: 600;
+  }
+}
+.ourStory {
+  width: 100%;
+  height: 70%;
+  margin-top: 40px;
+}
+
+.inner-ourstory {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.ourStory-titel {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.ourStory-titel h2 {
+  font-size: 25px;
+  color: #0e3324;
+}
+.ourStory-titel p {
+  font-size: 15px;
+}
+
+.ourAllstory {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.storyBox {
+  display: flex;
+  gap: 20px;
+}
+.storyBox .iconBox {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #0e3324;
+}
+.storyBox .iconBox i {
+  font-size: 30px;
+  color: white;
+}
+.storyBox .storyText {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.storyBox .storyText h2 {
+  font-size: 18px;
+  color: #0e3324;
+  font-weight: 600;
+}
+.storyBox .storyText p {
+  font-size: 14px;
+  color: gray;
+}
+
+@media (min-width: 768px) {
+  .ourStory {
+    margin-top: 150px;
+    height: auto;
+    padding: 20px;
+  }
+  .ourStory .inner-ourstory {
+    padding: 0px 40px;
+  }
+  .ourStory .inner-ourstory .ourStory-titel h2 {
+    font-size: 30px;
+  }
+  .ourStory .inner-ourstory .ourStory-titel p {
+    font-size: 20px;
+  }
+  .ourStory .inner-ourstory .ourAllstory {
+    width: 100%;
+    flex-direction: row;
+  }
+  .ourAllstory .storyBox {
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ourStory .storyBox .iconBox {
+    width: 80px;
+    height: 80px;
+  }
+  .ourStory .storyBox .iconBox i {
+    font-size: 40px;
+  }
+  .ourAllstory .storyBox .storyText {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .ourStory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.aboutDiv {
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.inner-about {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  background-color: #dddddb;
+}
+
+.about-leftSide {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+}
+.about-leftSide img {
+  width: 100%;
+}
+
+.about-rightSide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 20px;
+  padding-bottom: 30px;
+}
+.about-rightSide h3 {
+  color: #345646;
+}
+.about-rightSide p {
+  font-size: 15px;
+  color: gray;
+  line-height: 22px;
+}
+.about-rightSide .cube {
+  border: 1px solid black;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .aboutDiv {
+    margin-top: 60px;
+    padding: 20px 40px;
+  }
+  .aboutDiv .inner-about {
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+  .aboutDiv .inner-about .about-leftSide {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+  }
+  .aboutDiv .inner-about .about-leftSide img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 20px 0px 0px 20px !important;
+  }
+  .aboutDiv .inner-about .about-rightSide {
+    width: 50%;
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .aboutDiv {
+    display: flex;
+    justify-content: center;
+    padding: 0px 80px;
+    align-items: center;
+  }
+  .aboutDiv .inner-about .about-rightSide {
+    justify-content: center;
+  }
+  .aboutDiv .inner-about .about-rightSide h3 {
+    font-size: 40px;
+  }
+  .aboutDiv .inner-about .about-rightSide p {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=main.css.map */

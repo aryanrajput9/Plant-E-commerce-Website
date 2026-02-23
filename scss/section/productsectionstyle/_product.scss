@@ -140,11 +140,13 @@
 
     .our-product {
         margin-top: 0px;
-        height: 100%;
+        height: 70%;
     }
 
     .our-product .inner-product {
         gap: 50px;
+        height: 70%;
+        justify-content: start;
     }
 
     .our-product .inner-product .product-details {
@@ -170,6 +172,10 @@
 }
 
 @media (min-width:1024px) {
+    .our-product {
+        height: 100%;
+    }
+
     .our-product .inner-product .inner-product-title {
         gap: 30px;
     }
